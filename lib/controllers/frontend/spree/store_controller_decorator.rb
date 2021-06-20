@@ -1,5 +1,5 @@
 module Spree::StoreControllerDecorator
-  def account_link
+  def fetch_account_link
     render partial: 'spree/shared/link_to_account'
     fresh_when(spree_current_user)
   end
